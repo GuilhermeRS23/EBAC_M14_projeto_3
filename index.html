@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Cabeçalho -->
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
       <div class="container">
         <h1 class="navbar-brand m-0 section-title">Nome do restaurante</h1>
@@ -67,11 +68,12 @@
       </div>
     </header>
 
-    <div
+    <main
       data-bs-spy="scroll"
       data-bs-target="cabecalho"
       data-bs-smooth-scroll="true"
     >
+      <!-- Section Sobre o Restaurante -->
       <section id="sobre-o-restaurante">
         <div class="carousel slide" data-bs-ride="carousel" id="carousel">
           <div class="carousel-inner">
@@ -162,7 +164,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Section Eventos -->
       <section id="eventos" class="pt-5 pb-5">
         <div class="container">
           <div class="row">
@@ -225,7 +227,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Section Cardapio -->
       <section id="cardapio" class="pt-5 pb-5">
         <div class="container">
           <div class="row">
@@ -474,7 +476,91 @@
           </div>
         </div>
       </section>
-    </div>
+      <!-- Section Fale Conosco -->
+      <section id="fale-conosco" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">
+              Fale <span class="text-colored">conosco</span>
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-7 mb-5">
+              <form>
+                <div class="mb-3">
+                  <label for="nome" class="form-label fw-bold text-colored"
+                    >Seu nome</label
+                  >
+                  <input type="text" id="nome" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-bold text-colored"
+                    >Seu e-mail</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="telefone" class="form-label fw-bold text-colored"
+                    >Seu telefone (opcional)</label
+                  >
+                  <input type="tel" id="telefone" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label fw-bold text-colored"
+                    >Sua mensagem</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="mensagem"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn fw-bold">Enviar</button>
+              </form>
+            </div>
+            <div class="col-md-5">
+              <div class="row">
+                <h3 class="section-title fs-4 text-colored">
+                  <i class="bi bi-hand-thumbs-up-fill"></i>
+                  Redes sociais
+                </h3>
+                <ul class="social-links">
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="bi bi-facebook text-colored"></i>
+                    </a>
+                  </li>
+                  <li class="fs-5 ms-1 me-1">
+                    <a href="#">
+                      <i class="bi bi-instagram text-colored"></i>
+                    </a>
+                  </li>
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="bi bi-whatsapp text-colored"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="row mt-4">
+                <h3 class="section-title fs-4 text-colored">
+                  <i class="bi bi-cursor-fill"></i>
+                  Endereço
+                </h3>
+                <p>
+                  Rua Teste Exemplo nº 145, Bairro Bootstrap - São Paulo - SP
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
