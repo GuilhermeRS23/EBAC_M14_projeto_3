@@ -1,0 +1,77 @@
+:root {
+    --font-titulo: "Tektur", sans-serif;
+    --font-texto: "Share Tech", sans-serif;
+    --cor-primaria: #190482;
+    --cor-secundaria: #7752FE;
+    --cor-terciaria: #8E8FFA;
+    --cor-background: #C2D9FF;
+    --cor-texto: #FFF;
+    --cor-preto: #000;
+}
+
+body {
+    font-family: var(--font-texto);
+    color: var(--cor-texto);
+    background-color: var(--cor-background);
+}
+
+.title {
+    font-family: var(--font-titulo);
+    color: var(--cor-preto);
+    font-weight: 700;
+}
+
+.title-ligth {
+    font-family: var(--font-titulo);
+    color: var(--cor-texto);
+    font-weight: 700;
+}
+
+.navbar {
+    background-color: var(--cor-primaria);
+    opacity: 0.9;
+    color: var(--cor-branca);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navbar-toggler {
+    background-color: var(--cor-secundaria);
+}
+
+#cabecalho .nav .nav-link.active {
+    color: var(--cor-background);
+    border-bottom: 5px solid var(--cor-terciaria);
+    border-left: 4px solid var(--cor-terciaria);
+    border-radius: .75rem;
+}
+
+.text-destaque {
+    color: var(--cor-secundaria);
+    border-radius: 1rem 1rem 0 0;
+    border-bottom: 4px solid var(--cor-secundaria);
+    border-right: 5px solid var(--cor-secundaria);
+    padding-right: 5px;
+}
+
+.text-destaque-light {
+    color: var(--cor-texto);
+    border-radius: 1rem 1rem 0 0;
+    border-bottom: 4px solid var(--cor-background);
+    border-right: 5px solid var(--cor-background);
+    padding-right: 5px;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-link.active:hover {
+    color: var(--cor-texto);
+}
+
+#sobre-a-infogames {
+    color: var(--cor-preto);
+}
+
+#servicos{
+    background-color: var(--cor-terciaria);
+}
