@@ -113,6 +113,12 @@ body {
     color: var(--cor-texto);
 }
 
+#sobre-a-infogames .img-fluid{
+    max-height: 75vh;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* Responsive Design */
 @media (max-width: 767px) {
     .text-destaque-menu.active{
