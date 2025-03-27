@@ -27,7 +27,8 @@ body {
     font-weight: 700;
 }
 
-.navbar {
+.navbar,
+#rodape {
     background-color: var(--cor-primaria);
     opacity: 0.9;
     color: var(--cor-branca);
@@ -83,7 +84,8 @@ body {
     color: var(--cor-preto);
 }
 
-#servicos {
+#servicos,
+#contato {
     background-color: var(--cor-terciaria);
 }
 
@@ -99,6 +101,16 @@ body {
 
 #produtos .nav-link.active:hover{
     color: var(--cor-preto)
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--cor-texto);
 }
 
 /* Responsive Design */
