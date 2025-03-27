@@ -61,6 +61,17 @@ body {
     padding-right: 5px;
 }
 
+.text-destaque-menu {
+    color: var(--cor-primaria);
+}
+
+.text-destaque-menu.active{
+    background-color: var(--cor-texto);
+    border-radius: 0rem 1rem 0rem 0rem;
+    width: 20%;
+    color: var(--cor-primaria);
+}
+
 #cabecalho .nav .nav-link,
 .navbar-brand,
 .navbar-brand:hover,
@@ -72,6 +83,27 @@ body {
     color: var(--cor-preto);
 }
 
-#servicos{
+#servicos {
     background-color: var(--cor-terciaria);
+}
+
+.nav-produtos .nav-link.active {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-texto);
+}
+
+#produtos .tab-pane {
+    background-color: var(--cor-texto);
+    color: var(--cor-preto);    
+}
+
+#produtos .nav-link.active:hover{
+    color: var(--cor-preto)
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .text-destaque-menu.active{
+        width: 100%;
+    }
 }
